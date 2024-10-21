@@ -1,0 +1,16 @@
+The senario is like we have made the snake to move and control, now we need to acheive a food creation ,
+when the snake touches means it eats the food,means we need to extend the size of the snake ,immediately we need to create
+another foodd at random in the screen
+
+when the game ends ?
+that also needs to be discussed
+
+1. create food - this is a turtle inherited class
+    describe the shape
+    size
+    colour
+    how fast this moves  ?
+    and present at random location ? - need to consider the screen size
+
+
+
