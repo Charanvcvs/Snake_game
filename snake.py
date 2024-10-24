@@ -5,6 +5,7 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+pause_is_true = True
 
 
 class Snake:
@@ -44,3 +45,7 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+    def pause(self):
+        print("this is called")
+        self.head.goto()
