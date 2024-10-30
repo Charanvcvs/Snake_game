@@ -27,12 +27,14 @@ while game_is_on:
     time.sleep(0.1)
     snake.move()
 
-#detecting the collision
-
-    if snake.head.distance(food) < 20 :
+#detecting the food
+    if snake.head.distance(food) < 20:
         food.refresh()
+        snake.extend()
         score_board.add_score()
 
-#when food eats increase the snake segment and add to score every time we eat food
-
+#detect collisiion with wall
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        score_board.game_over()
 screen.exitonclick()
