@@ -49,7 +49,4 @@ def game_loop():
     # Continue game loop after 100 ms
     screen.ontimer(game_loop, 100)
 game_loop()
-
 screen.exitonclick()
-
-
